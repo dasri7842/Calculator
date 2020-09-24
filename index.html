@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <form name="paper">
+      <input class="textview" name="textview">
+   </form>
+   <table>
+      <tbody class="buttons">
+         <tr>
+            <td><input class="button" type="button" value="1" onclick="fill(1)"></td>
+            <td><input class="button" type="button" value="2" onclick="fill(2)"></td>
+            <td><input class="button" type="button" value="3" onclick="fill(3)"></td>
+            <td><input class="button" type="button" value="+" onclick="fill('+')"></td>
+         </tr>
+         <tr>
+            <td><input class="button" type="button" value="4" onclick="fill(4)"></td>
+            <td><input class="button" type="button" value="5" onclick="fill(5)"></td>
+            <td><input class="button" type="button" value="6" onclick="fill(6)"></td>
+            <td><input class="button" type="button" value="-" onclick="fill('-')"></td>
+         </tr>
+         <tr>
+            <td><input class="button" type="button" value="7" onclick="fill(7)"></td>
+            <td><input class="button" type="button" value="8" onclick="fill(8)"></td>
+            <td><input class="button" type="button" value="9" onclick="fill(9)"></td>
+            <td><input class="button" type="button" value="x" onclick="fill('*')"></td>
+         </tr>
+         <tr>
+            <td><input class="button" type="button" value="0" onclick="fill(0)"></td>
+            <td><input class="button" type="button" value="." onclick="fill('.')"></td>
+            <td><input class="button" type="button" value="/" onclick="fill('/')"></td>
+            <td rowspan="2"><input class="button" type="button" value="=" onclick="calci()" style="height: 105px;"></td>
+         </tr>
+         <tr>
+            <td><input class="button" type="button" value="<" onclick="back()"></td>
+            <td colspan="2"><input class="button" type="button" value="Clear" onclick="empty()" style="width: 156px;"></td>
+         </tr>
+      </tbody>
+   </table>
+  <script src="index.js"></script>
+</body>
+</html>
